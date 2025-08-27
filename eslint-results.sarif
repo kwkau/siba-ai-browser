@@ -1,0 +1,591 @@
+{
+  "version": "2.1.0",
+  "$schema": "http://json.schemastore.org/sarif-2.1.0-rtm.5",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "ESLint",
+          "informationUri": "https://eslint.org",
+          "rules": [
+            {
+              "id": "curly",
+              "helpUri": "https://eslint.org/docs/latest/rules/curly",
+              "properties": {},
+              "shortDescription": {
+                "text": "Enforce consistent brace style for all control statements"
+              }
+            },
+            {
+              "id": "semi",
+              "helpUri": "https://eslint.org/docs/latest/rules/semi",
+              "properties": {},
+              "shortDescription": {
+                "text": "Require or disallow semicolons instead of ASI"
+              }
+            }
+          ],
+          "version": "9.32.0"
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///workspaces/siba-ai-browser/src/copilotAgent.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///workspaces/siba-ai-browser/src/copilotAgentTest.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///workspaces/siba-ai-browser/src/extension.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///workspaces/siba-ai-browser/src/languageModelTools.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///workspaces/siba-ai-browser/src/mcpBridge.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///workspaces/siba-ai-browser/src/mcpCommandBridge.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///workspaces/siba-ai-browser/src/puppeteerService.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///workspaces/siba-ai-browser/src/test/enhanced-features.test.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///workspaces/siba-ai-browser/src/test/extension.test.ts"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///workspaces/siba-ai-browser/src/vscodeMP.ts"
+          }
+        }
+      ],
+      "results": [
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/extension.ts",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 324,
+                  "startColumn": 37,
+                  "endLine": 324,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/extension.ts",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 362,
+                  "startColumn": 36,
+                  "endLine": 362,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/extension.ts",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 370,
+                  "startColumn": 34,
+                  "endLine": 370,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/extension.ts",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 407,
+                  "startColumn": 36,
+                  "endLine": 407,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/extension.ts",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 415,
+                  "startColumn": 32,
+                  "endLine": 415,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/extension.ts",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 452,
+                  "startColumn": 34,
+                  "endLine": 452,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/extension.ts",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 491,
+                  "startColumn": 36,
+                  "endLine": 491,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/extension.ts",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 499,
+                  "startColumn": 59,
+                  "endLine": 499,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/extension.ts",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 537,
+                  "startColumn": 42,
+                  "endLine": 537,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/extension.ts",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 545,
+                  "startColumn": 42,
+                  "endLine": 545,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/extension.ts",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 611,
+                  "startColumn": 36,
+                  "endLine": 611,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/extension.ts",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 767,
+                  "startColumn": 36,
+                  "endLine": 767,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/extension.ts",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 775,
+                  "startColumn": 34,
+                  "endLine": 775,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/mcpBridge.ts",
+                  "index": 4
+                },
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 26,
+                  "endLine": 110,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/puppeteerService.ts",
+                  "index": 6
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 39,
+                  "endLine": 129,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/puppeteerService.ts",
+                  "index": 6
+                },
+                "region": {
+                  "startLine": 138,
+                  "startColumn": 57,
+                  "endLine": 138,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/puppeteerService.ts",
+                  "index": 6
+                },
+                "region": {
+                  "startLine": 155,
+                  "startColumn": 22,
+                  "endLine": 155,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Missing semicolon."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/puppeteerService.ts",
+                  "index": 6
+                },
+                "region": {
+                  "startLine": 990,
+                  "startColumn": 140,
+                  "endLine": 990,
+                  "endColumn": 141
+                }
+              }
+            }
+          ],
+          "ruleId": "semi",
+          "ruleIndex": 1
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/puppeteerService.ts",
+                  "index": 6
+                },
+                "region": {
+                  "startLine": 1509,
+                  "startColumn": 61,
+                  "endLine": 1509,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/puppeteerService.ts",
+                  "index": 6
+                },
+                "region": {
+                  "startLine": 1523,
+                  "startColumn": 49,
+                  "endLine": 1523,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        },
+        {
+          "level": "warning",
+          "message": {
+            "text": "Expected { after 'if' condition."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///workspaces/siba-ai-browser/src/puppeteerService.ts",
+                  "index": 6
+                },
+                "region": {
+                  "startLine": 1527,
+                  "startColumn": 49,
+                  "endLine": 1527,
+                  "endColumn": 80
+                }
+              }
+            }
+          ],
+          "ruleId": "curly",
+          "ruleIndex": 0
+        }
+      ]
+    }
+  ]
+}

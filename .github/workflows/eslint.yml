@@ -47,3 +47,11 @@ jobs:
         with:
           sarif_file: eslint-results.sarif
           wait-for-processing: true
+
+      - name: Always upload raw SARIF artifact (debug)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eslint-sarif-raw
+          path: eslint-results.sarif
+          if-no-files-found: error
