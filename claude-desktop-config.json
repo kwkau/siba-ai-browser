@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "siba-ai-browser": {
+      "command": "node",
+      "args": ["/Users/kwakuappiah-kubby/.vscode/extensions/siba-tech.siba-ai-extensions-1.0.23/mcp-server/build/index.js"],
+      "env": {},
+      "description": "SIBA AI Browser Extensions - Advanced browser automation with 21 MCP tools for AI assistants"
+    }
+  }
+}

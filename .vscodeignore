@@ -1,0 +1,28 @@
+.vscode/**
+.vscode-test/**
+out/**
+node_modules/**
+src/**
+.gitignore
+.yarnrc
+esbuild.js
+vsc-extension-quickstart.md
+**/tsconfig.json
+**/eslint.config.mjs
+**/*.map
+**/*.ts
+**/.vscode-test.*
+
+# Test files (reduce package size)
+test-*.js
+**/__tests__/**
+**/test/**
+
+# Development files
+.github/**
+eslint.config.mjs
+TESTING_GUIDE.md
+PROJECT_SUMMARY.md
+
+# MCP server source maps (reduce package size)
+mcp-server/build/**/*.map
