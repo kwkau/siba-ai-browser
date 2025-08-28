@@ -1112,7 +1112,7 @@ export class PuppeteerService {
                     break;
                 case 'text':
                     const textSelector = options?.exact 
-                        ? `::-p-text("${selector.replace(/"/g, '\\"')}")` 
+                        ? `::-p-text("${selector.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}")` 
                         : `::-p-text(${selector})`;
                     locator = page.locator(textSelector);
                     break;

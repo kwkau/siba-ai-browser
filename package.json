@@ -1,7 +1,7 @@
 {
   "name": "siba-ai-extensions",
   "displayName": "SIBA AI Browser Extensions",
-  "description": "Advanced VS Code extension enabling AI assistants to control external browsers through Puppeteer automation. Features comprehensive browser management, screenshot capture, web automation, form filling, JavaScript execution, drag-and-drop, file uploads, network interception, and specialized select dropdown automation with 27 enhanced tools for seamless AI assistant connectivity.",
+  "description": "Advanced VS Code extension enabling AI assistants to control external browsers through Puppeteer automation. Features comprehensive browser management, screenshot capture, web automation, advanced element interaction, and real-time communication with MCP-enabled servers.",
   "version": "1.2.1",
   "publisher": "siba-tech",
   "author": {
@@ -49,161 +49,34 @@
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
-      {
-        "command": "siba-ai-extensions.launchBrowser",
-        "title": "Launch Browser (Visible)",
-        "category": "SIBA AI Puppeteer"
-      },
-      {
-        "command": "siba-ai-extensions.launchBrowserHeadless",
-        "title": "Launch Browser (Headless)",
-        "category": "SIBA AI Puppeteer"
-      },
-      {
-        "command": "siba-ai-extensions.navigateToUrl",
-        "title": "Navigate to URL",
-        "category": "SIBA AI Puppeteer"
-      },
-      {
-        "command": "siba-ai-extensions.takeScreenshot",
-        "title": "Take Screenshot",
-        "category": "SIBA AI Puppeteer"
-      },
-
-      {
-        "command": "siba-ai-extensions.takeElementScreenshot",
-        "title": "Take Element Screenshot",
-        "category": "SIBA AI Puppeteer"
-      },
-      {
-        "command": "siba-ai-extensions.getBrowserStatus",
-        "title": "Get Browser Status",
-        "category": "SIBA AI Puppeteer"
-      },
-      {
-        "command": "siba-ai-extensions.closeBrowser",
-        "title": "Close Browser",
-        "category": "SIBA AI Puppeteer"
-      },
-      {
-        "command": "siba-ai-extensions.closeAllBrowsers",
-        "title": "Close All Browsers",
-        "category": "SIBA AI Puppeteer"
-      },
-      {
-        "command": "siba-ai-extensions.fillForm",
-        "title": "Fill Form",
-        "category": "SIBA AI Advanced"
-      },
-      {
-        "command": "siba-ai-extensions.interactWithElement",
-        "title": "Interact with Element",
-        "category": "SIBA AI Advanced"
-      },
-      {
-        "command": "siba-ai-extensions.advancedTypeText",
-        "title": "Advanced Type Text",
-        "category": "SIBA AI Advanced"
-      },
-      {
-        "command": "siba-ai-extensions.evaluateJavaScript",
-        "title": "Evaluate JavaScript",
-        "category": "SIBA AI Advanced"
-      },
-      {
-        "command": "siba-ai-extensions.uploadFile",
-        "title": "Upload File",
-        "category": "SIBA AI Advanced"
-      },
-      {
-        "command": "siba-ai-extensions.dragAndDrop",
-        "title": "Drag and Drop",
-        "category": "SIBA AI Advanced"
-      },
-      {
-        "command": "siba-ai-extensions.enableNetworkInterception",
-        "title": "Enable Network Interception",
-        "category": "SIBA AI Network"
-      },
-      {
-        "command": "siba-ai-extensions.addNetworkRule",
-        "title": "Add Network Rule",
-        "category": "SIBA AI Network"
-      },
-      {
-        "command": "siba-ai-extensions.getNetworkLogs",
-        "title": "Get Network Logs",
-        "category": "SIBA AI Network"
-      },
-      {
-        "command": "siba-ai-extensions.getElementText",
-        "title": "Get Element Text",
-        "category": "SIBA AI Advanced"
-      },
-      {
-        "command": "siba-ai-extensions.getElementAttribute",
-        "title": "Get Element Attribute",
-        "category": "SIBA AI Advanced"
-      },
-      {
-        "command": "siba-ai-extensions.advancedDomInteraction",
-        "title": "Advanced DOM Interaction",
-        "category": "SIBA AI Advanced"
-      },
-      {
-        "command": "siba-ai-extensions.getMCPBridgeStatus",
-        "title": "Get MCP Bridge Status",
-        "category": "SIBA AI Bridge"
-      },
-      {
-        "command": "siba-ai-extensions.testMCPConnection",
-        "title": "Test MCP Connection",
-        "category": "SIBA AI Bridge"
-      },
-      {
-        "command": "siba-ai-extensions.testExtension",
-        "title": "🧪 Test SIBA AI Extension",
-        "category": "SIBA AI Bridge"
-      },
-      {
-        "command": "siba-ai-extensions.getPageStructure",
-        "title": "Get Page Structure",
-        "category": "SIBA AI Advanced"
-      },
-      {
-        "command": "siba-ai-extensions.pageIntrospect",
-        "title": "Page Introspection - Analyze All Elements",
-        "category": "SIBA AI Advanced"
-      },
-      {
-        "command": "siba-ai-extensions.pageElementIntrospect",
-        "title": "Element Introspection - Analyze Specific Element",
-        "category": "SIBA AI Advanced"
-      },
-      {
-        "command": "siba-ai-extensions.selectDropdown",
-        "title": "Select Dropdown - Advanced Interaction",
-        "category": "SIBA AI Advanced"
-      },
-      {
-        "command": "siba-ai-extensions.getSelectInfo",
-        "title": "Get Select Dropdown Information",
-        "category": "SIBA AI Advanced"
-      }
-    ],
-    "chatParticipants": [
-      {
-        "id": "siba-ai-browser",
-        "name": "siba-ai-browser",
-        "description": "AI assistant for browser automation, screenshots, and web testing",
-        "isSticky": true
-      }
-    ],
-    "mcpServerDefinitionProviders": [
-      {
-        "id": "siba-ai-mcp-provider",
-        "label": "SIBA AI MCP Server Provider"
-      }
+      { "command": "siba-ai-extensions.launchBrowser", "title": "Launch Browser (Visible)", "category": "SIBA AI Puppeteer" },
+      { "command": "siba-ai-extensions.launchBrowserHeadless", "title": "Launch Browser (Headless)", "category": "SIBA AI Puppeteer" },
+      { "command": "siba-ai-extensions.navigateToUrl", "title": "Navigate to URL", "category": "SIBA AI Puppeteer" },
+      { "command": "siba-ai-extensions.takeScreenshot", "title": "Take Screenshot", "category": "SIBA AI Puppeteer" },
+      { "command": "siba-ai-extensions.takeElementScreenshot", "title": "Take Element Screenshot", "category": "SIBA AI Puppeteer" },
+      { "command": "siba-ai-extensions.getBrowserStatus", "title": "Get Browser Status", "category": "SIBA AI Puppeteer" },
+      { "command": "siba-ai-extensions.closeBrowser", "title": "Close Browser", "category": "SIBA AI Puppeteer" },
+      { "command": "siba-ai-extensions.closeAllBrowsers", "title": "Close All Browsers", "category": "SIBA AI Puppeteer" },
+      { "command": "siba-ai-extensions.fillForm", "title": "Fill Form", "category": "SIBA AI Advanced" },
+      { "command": "siba-ai-extensions.interactWithElement", "title": "Interact with Element", "category": "SIBA AI Advanced" },
+      { "command": "siba-ai-extensions.advancedTypeText", "title": "Advanced Type Text", "category": "SIBA AI Advanced" },
+      { "command": "siba-ai-extensions.evaluateJavaScript", "title": "Evaluate JavaScript", "category": "SIBA AI Advanced" },
+      { "command": "siba-ai-extensions.uploadFile", "title": "Upload File", "category": "SIBA AI Advanced" },
+      { "command": "siba-ai-extensions.dragAndDrop", "title": "Drag and Drop", "category": "SIBA AI Advanced" },
+      { "command": "siba-ai-extensions.enableNetworkInterception", "title": "Enable Network Interception", "category": "SIBA AI Network" },
+      { "command": "siba-ai-extensions.addNetworkRule", "title": "Add Network Rule", "category": "SIBA AI Network" },
+      { "command": "siba-ai-extensions.getNetworkLogs", "title": "Get Network Logs", "category": "SIBA AI Network" },
+      { "command": "siba-ai-extensions.getElementText", "title": "Get Element Text", "category": "SIBA AI Advanced" },
+      { "command": "siba-ai-extensions.getElementAttribute", "title": "Get Element Attribute", "category": "SIBA AI Advanced" },
+      { "command": "siba-ai-extensions.advancedDomInteraction", "title": "Advanced DOM Interaction", "category": "SIBA AI Advanced" },
+      { "command": "siba-ai-extensions.getMCPBridgeStatus", "title": "Get MCP Bridge Status", "category": "SIBA AI Bridge" },
+      { "command": "siba-ai-extensions.testMCPConnection", "title": "Test MCP Connection", "category": "SIBA AI Bridge" },
+      { "command": "siba-ai-extensions.testExtension", "title": "🧪 Test SIBA AI Extension", "category": "SIBA AI Bridge" },
+      { "command": "siba-ai-extensions.getPageStructure", "title": "Get Page Structure", "category": "SIBA AI Advanced" },
+      { "command": "siba-ai-extensions.pageIntrospect", "title": "Page Introspection - Analyze All Elements", "category": "SIBA AI Advanced" },
+      { "command": "siba-ai-extensions.pageElementIntrospect", "title": "Element Introspection - Analyze Specific Element", "category": "SIBA AI Advanced" },
+      { "command": "siba-ai-extensions.selectDropdown", "title": "Select Dropdown - Advanced Interaction", "category": "SIBA AI Advanced" },
+      { "command": "siba-ai-extensions.getSelectInfo", "title": "Get Select Dropdown Information", "category": "SIBA AI Advanced" }
     ]
   },
   "scripts": {
@@ -217,7 +90,7 @@
     "watch-tests": "tsc -p . -w --outDir out",
     "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
     "check-types": "tsc --noEmit",
-    "lint": "eslint src",
+  "lint": "eslint src --ext .ts,.js --format @microsoft/eslint-formatter-sarif --output-file eslint-results.sarif",
     "test": "vscode-test",
     "publish": "yarn run package && vsce publish",
     "package-extension": "yarn run package && vsce package"
@@ -236,6 +109,7 @@
     "@vscode/vsce": "^3.6.0",
     "esbuild": "^0.25.3",
     "eslint": "^9.25.1",
+  "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "npm-run-all": "^4.1.5",
     "typescript": "^5.8.3"
   }
